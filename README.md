@@ -1,5 +1,7 @@
 # Book Trading Club
 
+**[Live Demo](https://book-trading-club-eight.vercel.app)**
+
 A modern Full-Stack MERN web application for exchanging physical books between readers worldwide with real-time chat functionality.
 
 ## About
@@ -105,6 +107,9 @@ This project fulfills all requirements of the FreeCodeCamp "Manage a Book Tradin
 
 ### Setup
 
+**Try the live app:** [https://book-trading-club-eight.vercel.app]
+
+**Or run locally:**
 Clone the repository:
 
 ```bash
@@ -411,6 +416,13 @@ Efficient data handling for large collections:
 
 ## Deployment
 
+**Production URLs:**
+- **Frontend:** https://book-trading-club-eight.vercel.app
+- **Database:** MongoDB Atlas (Cloud)
+
+### How it was deployed:
+
+
 ### MongoDB Atlas
 1. Create free cluster at mongodb.com/atlas
 2. Create database user
@@ -531,7 +543,9 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 Maximilian Adam
 
-- GitHub: https://github.com/Max-A92
+-  **Live Project:** [https://book-trading-club-eight.vercel.app]
+-  **GitHub:** [https://github.com/Max-A92]
+-  **Repository:** [https://github.com/Max-A92/book-trading-club]
 
 ## Acknowledgments
 
