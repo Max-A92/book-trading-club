@@ -440,7 +440,9 @@ Efficient data handling for large collections:
 ## Environment Variables
 
 ### Backend (.env)
-```MONGODB_URI=mongodb+srv://YOUR_USERNAME:YOUR_PASSWORD@YOUR_CLUSTER.mongodb.net/YOUR_DATABASE_NAME
+```env
+# Get your MongoDB connection string from MongoDB Atlas
+MONGODB_URI=your_mongodb_atlas_connection_string_here
 JWT_SECRET=your_random_64_character_hex_string
 PORT=5000
 NODE_ENV=development
