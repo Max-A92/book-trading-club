@@ -1,0 +1,205 @@
+.book-search {
+  background-color: var(--color-bg-secondary);
+  border-radius: var(--border-radius-lg);
+  padding: var(--spacing-xl);
+  margin-bottom: var(--spacing-xl);
+}
+
+.book-search__header {
+  margin-bottom: var(--spacing-lg);
+}
+
+.book-search__header h3 {
+  margin: 0 0 var(--spacing-xs) 0;
+  color: var(--color-primary);
+}
+
+.book-search__subtitle {
+  margin: 0;
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+}
+
+.book-search__form {
+  margin-bottom: var(--spacing-lg);
+}
+
+.book-search__input-group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.book-search__toggle {
+  display: flex;
+  gap: var(--spacing-xs);
+  background-color: var(--color-white);
+  border-radius: var(--border-radius-md);
+  padding: var(--spacing-xs);
+  width: fit-content;
+}
+
+.book-search__toggle-btn {
+  padding: var(--spacing-sm) var(--spacing-lg);
+  border: none;
+  background-color: transparent;
+  color: var(--color-text-secondary);
+  font-weight: var(--font-weight-medium);
+  border-radius: var(--border-radius-md);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.book-search__toggle-btn.active {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+.book-search__toggle-btn:hover:not(.active) {
+  background-color: var(--color-gray-200);
+}
+
+.book-search__input-group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+@media (min-width: 768px) {
+  .book-search__input-group {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  
+  .book-search__toggle {
+    flex-shrink: 0;
+  }
+  
+  .book-search__input {
+    flex: 1;
+  }
+}
+
+.book-search__input {
+  width: 100%;
+  padding: var(--spacing-md);
+  font-size: var(--font-size-base);
+  border: var(--border-width-thin) solid var(--border-color);
+  border-radius: var(--border-radius-md);
+  transition: all var(--transition-fast);
+}
+
+.book-search__input:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(44, 62, 80, 0.1);
+}
+
+.book-search__error {
+  margin-top: var(--spacing-md);
+}
+
+.book-search__results {
+  margin-top: var(--spacing-xl);
+}
+
+.book-search__results h4 {
+  margin: 0 0 var(--spacing-lg) 0;
+  color: var(--color-primary);
+}
+
+.book-search__results-grid {
+  display: grid;
+  gap: var(--spacing-md);
+}
+
+.book-search__result-card {
+  display: flex;
+  gap: var(--spacing-md);
+  padding: var(--spacing-md);
+  background-color: var(--color-white);
+  border-radius: var(--border-radius-md);
+  transition: all var(--transition-fast);
+  align-items: center;
+}
+
+.book-search__result-card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.book-search__result-cover {
+  width: 80px;
+  height: 120px;
+  flex-shrink: 0;
+  border-radius: var(--border-radius-sm);
+  overflow: hidden;
+  background-color: var(--color-gray-200);
+}
+
+.book-search__result-cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.book-search__result-cover-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  background: linear-gradient(
+    135deg,
+    var(--color-primary) 0%,
+    var(--color-secondary) 100%
+  );
+}
+
+.book-search__result-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.book-search__result-info h5 {
+  margin: 0 0 var(--spacing-xs) 0;
+  font-size: var(--font-size-lg);
+  color: var(--color-primary);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.book-search__result-author {
+  margin: 0 0 var(--spacing-xs) 0;
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+  font-style: italic;
+}
+
+.book-search__result-meta {
+  margin: 0;
+  font-size: var(--font-size-xs);
+  color: var(--color-text-tertiary);
+}
+
+/* ─────────────────────────────────────────────────────────
+   RESPONSIVE
+   ───────────────────────────────────────────────────────── */
+
+@media (max-width: 768px) {
+  .book-search__result-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .book-search__result-cover {
+    width: 100px;
+    height: 150px;
+  }
+
+  .book-search__result-info h5 {
+    white-space: normal;
+  }
+}

@@ -1,0 +1,197 @@
+.requests-page {
+  padding: var(--spacing-xl) 0;
+}
+
+.requests-page__header {
+  margin-bottom: var(--spacing-xl);
+}
+
+.requests-page__header h1 {
+  margin: 0 0 var(--spacing-xs) 0;
+  color: var(--color-primary);
+}
+
+.requests-page__subtitle {
+  margin: 0;
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-sm);
+}
+
+.requests-tabs {
+  display: flex;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-xl);
+  border-bottom: 2px solid var(--border-color);
+}
+
+.requests-tab {
+  padding: var(--spacing-md) var(--spacing-lg);
+  background: none;
+  border: none;
+  border-bottom: 3px solid transparent;
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-text-secondary);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  margin-bottom: -2px;
+}
+
+.requests-tab:hover {
+  color: var(--color-primary);
+}
+
+.requests-tab--active {
+  color: var(--color-primary);
+  border-bottom-color: var(--color-primary);
+}
+
+.requests-grid {
+  display: grid;
+  gap: var(--spacing-lg);
+}
+
+.request-card {
+  background-color: var(--color-white);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-sm);
+  padding: var(--spacing-lg);
+  transition: all var(--transition-normal);
+}
+
+.request-card:hover {
+  box-shadow: var(--shadow-md);
+}
+
+.request-card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--spacing-md);
+  padding-bottom: var(--spacing-md);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.request-card__title {
+  margin: 0;
+  font-size: var(--font-size-lg);
+  color: var(--color-primary);
+}
+
+.request-card__content {
+  margin-bottom: var(--spacing-md);
+}
+
+.request-card__book {
+  margin-bottom: var(--spacing-sm);
+}
+
+.request-card__book strong {
+  display: block;
+  margin-bottom: var(--spacing-xs);
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-sm);
+}
+
+.request-card__book p {
+  margin: 0 0 var(--spacing-xs) 0;
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-medium);
+}
+
+.request-card__book small {
+  color: var(--color-text-secondary);
+}
+
+.request-card__date {
+  margin-top: var(--spacing-md);
+}
+
+.request-card__date small {
+  color: var(--color-text-secondary);
+}
+
+.request-card__actions {
+  display: flex;
+  gap: var(--spacing-sm);
+  margin-top: var(--spacing-lg);
+  padding-top: var(--spacing-lg);
+  border-top: 1px solid var(--border-color);
+}
+
+.request-card__actions .btn {
+  flex: 1;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: var(--spacing-xs) var(--spacing-sm);
+  border-radius: var(--border-radius-md);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+  text-transform: uppercase;
+}
+
+.status-badge--pending {
+  background-color: var(--color-warning-light);
+  color: var(--color-warning-dark);
+}
+
+.status-badge--approved {
+  background-color: var(--color-success-light);
+  color: var(--color-success-dark);
+}
+
+.status-badge--rejected {
+  background-color: var(--color-danger-light);
+  color: var(--color-danger-dark);
+}
+
+.requests-empty {
+  text-align: center;
+  padding: var(--spacing-3xl) var(--spacing-xl);
+  background-color: var(--color-white);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-sm);
+}
+
+.requests-empty__icon {
+  font-size: 5rem;
+  margin-bottom: var(--spacing-lg);
+  opacity: 0.5;
+}
+
+.requests-empty h2 {
+  color: var(--color-primary);
+  margin-bottom: var(--spacing-sm);
+}
+
+.requests-empty p {
+  color: var(--color-text-secondary);
+  margin: 0;
+}
+
+/* ─────────────────────────────────────────────────────────
+   RESPONSIVE
+   ───────────────────────────────────────────────────────── */
+
+@media (max-width: 768px) {
+  .requests-tabs {
+    gap: var(--spacing-sm);
+  }
+
+  .requests-tab {
+    padding: var(--spacing-sm) var(--spacing-md);
+    font-size: var(--font-size-sm);
+  }
+
+  .request-card__header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-sm);
+  }
+
+  .request-card__actions {
+    flex-direction: column;
+  }
+}

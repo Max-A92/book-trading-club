@@ -1,0 +1,73 @@
+.add-book-card__content {
+  padding: var(--spacing-xl);
+}
+
+.add-book-divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: var(--spacing-xl) 0;
+  color: var(--color-text-tertiary);
+}
+
+.add-book-divider::before,
+.add-book-divider::after {
+  content: '';
+  flex: 1;
+  border-bottom: var(--border-width-thin) solid var(--border-color);
+}
+
+.add-book-divider span {
+  padding: 0 var(--spacing-md);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.add-book-manual-toggle {
+  text-align: center;
+  margin-bottom: var(--spacing-xl);
+}
+
+.add-book-manual-toggle .btn {
+  min-width: 250px;
+}
+
+.add-book-back {
+  margin-bottom: var(--spacing-lg);
+}
+
+.btn-text {
+  background: none;
+  border: none;
+  color: var(--color-primary);
+  padding: var(--spacing-sm) 0;
+  font-weight: var(--font-weight-medium);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.btn-text:hover {
+  color: var(--color-secondary);
+  text-decoration: underline;
+}
+
+.add-book-form {
+  padding: 0;
+  margin-top: var(--spacing-lg);
+}
+
+/* ─────────────────────────────────────────────────────────
+   RESPONSIVE UPDATES
+   ───────────────────────────────────────────────────────── */
+
+@media (max-width: 768px) {
+  .add-book-card__content {
+    padding: var(--spacing-lg);
+  }
+
+  .add-book-manual-toggle .btn {
+    min-width: 100%;
+  }
+}

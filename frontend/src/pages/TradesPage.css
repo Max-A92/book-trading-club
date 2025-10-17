@@ -1,0 +1,140 @@
+.trades-page {
+  padding: var(--spacing-xl) 0;
+}
+
+.trades-page__header {
+  margin-bottom: var(--spacing-xl);
+}
+
+.trades-page__header h1 {
+  margin: 0 0 var(--spacing-xs) 0;
+  color: var(--color-primary);
+}
+
+.trades-page__subtitle {
+  margin: 0;
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-sm);
+}
+
+.trades-grid {
+  display: grid;
+  gap: var(--spacing-lg);
+}
+
+.trade-card {
+  background-color: var(--color-white);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-sm);
+  padding: var(--spacing-lg);
+  transition: all var(--transition-normal);
+}
+
+.trade-card:hover {
+  box-shadow: var(--shadow-md);
+}
+
+.trade-card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--spacing-md);
+  padding-bottom: var(--spacing-md);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.trade-card__participants {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  font-weight: var(--font-weight-medium);
+}
+
+.trade-card__arrow {
+  font-size: var(--font-size-xl);
+  color: var(--color-success);
+}
+
+.trade-card__content {
+  margin-bottom: var(--spacing-md);
+}
+
+.trade-card__book strong {
+  display: block;
+  margin-bottom: var(--spacing-xs);
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-sm);
+}
+
+.trade-card__book p {
+  margin: 0 0 var(--spacing-xs) 0;
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-medium);
+}
+
+.trade-card__book small {
+  color: var(--color-text-secondary);
+}
+
+.trade-card__dates {
+  display: flex;
+  gap: var(--spacing-lg);
+  margin-top: var(--spacing-md);
+  padding-top: var(--spacing-md);
+  border-top: 1px solid var(--border-color);
+}
+
+.trade-card__date small {
+  color: var(--color-text-secondary);
+}
+
+.trades-empty {
+  text-align: center;
+  padding: var(--spacing-3xl) var(--spacing-xl);
+  background-color: var(--color-white);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-sm);
+}
+
+.trades-empty__icon {
+  font-size: 5rem;
+  margin-bottom: var(--spacing-lg);
+  opacity: 0.5;
+}
+
+.trades-empty h2 {
+  color: var(--color-primary);
+  margin-bottom: var(--spacing-sm);
+}
+
+.trades-empty p {
+  color: var(--color-text-secondary);
+  margin: 0;
+}
+
+/* ─────────────────────────────────────────────────────────
+   RESPONSIVE
+   ───────────────────────────────────────────────────────── */
+
+@media (max-width: 768px) {
+  .trade-card__header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-sm);
+  }
+
+  .trade-card__participants {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-xs);
+  }
+
+  .trade-card__arrow {
+    transform: rotate(90deg);
+  }
+
+  .trade-card__dates {
+    flex-direction: column;
+    gap: var(--spacing-xs);
+  }
+}

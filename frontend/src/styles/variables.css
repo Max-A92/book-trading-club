@@ -1,0 +1,135 @@
+:root {
+  --color-primary: #2c3e50;
+  --color-primary-light: #34495e;
+  --color-primary-dark: #1a252f;
+  
+  --color-secondary: #3498db;
+  --color-secondary-light: #5dade2;
+  --color-secondary-dark: #2874a6;
+  
+  --color-accent: #e74c3c;
+  --color-accent-light: #ec7063;
+  --color-accent-dark: #c0392b;
+  
+  
+
+  --color-success: #27ae60;
+  --color-success-light: #2ecc71;
+  --color-success-dark: #229954;
+  
+  --color-warning: #f39c12;
+  --color-warning-light: #f8c471;
+  --color-warning-dark: #d68910;
+  
+  --color-danger: #e74c3c;
+  --color-danger-light: #ec7063;
+  --color-danger-dark: #c0392b;
+  
+  --color-info: #3498db;
+  --color-info-light: #5dade2;
+  --color-info-dark: #2874a6;
+  
+  
+
+  --color-white: #ffffff;
+  --color-black: #000000;
+  
+  --color-gray-100: #f8f9fa;
+  --color-gray-200: #e9ecef;
+  --color-gray-300: #dee2e6;
+  --color-gray-400: #ced4da;
+  --color-gray-500: #adb5bd;
+  --color-gray-600: #6c757d;
+  --color-gray-700: #495057;
+  --color-gray-800: #343a40;
+  --color-gray-900: #212529;
+  
+  --color-bg-primary: #ffffff;
+  --color-bg-secondary: #f8f9fa;
+  --color-bg-tertiary: #ecf0f1;
+  
+  --color-text-primary: #2c3e50;
+  --color-text-secondary: #7f8c8d;
+  --color-text-tertiary: #95a5a6;
+  --color-text-inverse: #ffffff;
+  
+  
+  --font-family-primary: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 
+                         'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 
+                         'Droid Sans', 'Helvetica Neue', sans-serif;
+  --font-family-code: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+  
+  --font-size-xs: 0.75rem;    
+  --font-size-sm: 0.875rem;   
+  --font-size-base: 1rem;     
+  --font-size-lg: 1.125rem;   
+  --font-size-xl: 1.25rem;    
+  --font-size-2xl: 1.5rem;    
+  --font-size-3xl: 1.875rem;  
+  --font-size-4xl: 2.25rem;  
+  
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  
+  --line-height-tight: 1.25;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.75;
+  
+  
+  --spacing-xs: 0.25rem;   
+  --spacing-sm: 0.5rem;    
+  --spacing-md: 1rem;      
+  --spacing-lg: 1.5rem;    
+  --spacing-xl: 2rem;      
+  --spacing-2xl: 3rem;     
+  --spacing-3xl: 4rem;     
+  
+  
+  --border-width-thin: 1px;
+  --border-width-medium: 2px;
+  --border-width-thick: 4px;
+  
+  --border-radius-sm: 0.25rem;  
+  --border-radius-md: 0.5rem;   
+  --border-radius-lg: 0.75rem;  
+  --border-radius-xl: 1rem;     
+  --border-radius-full: 9999px;
+  
+  --border-color: var(--color-gray-300);
+  
+  
+  --shadow-xs: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-sm: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  
+  
+  --transition-fast: 150ms ease-in-out;
+  --transition-normal: 250ms ease-in-out;
+  --transition-slow: 350ms ease-in-out;
+  
+ 
+  --z-index-dropdown: 1000;
+  --z-index-sticky: 1020;
+  --z-index-fixed: 1030;
+  --z-index-modal-backdrop: 1040;
+  --z-index-modal: 1050;
+  --z-index-popover: 1060;
+  --z-index-tooltip: 1070;
+  
+  
+  --container-max-width: 1200px;
+  --navbar-height: 70px;
+  --footer-height: 60px;
+  
+  
+  --breakpoint-xs: 480px;
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+}
