@@ -440,8 +440,7 @@ Efficient data handling for large collections:
 ## Environment Variables
 
 ### Backend (.env)
-```env
-MONGODB_URI=mongodb+srv://username:password@cluster.mongodb.net/bookTradingClub
+```MONGODB_URI=mongodb+srv://YOUR_USERNAME:YOUR_PASSWORD@YOUR_CLUSTER.mongodb.net/YOUR_DATABASE_NAME
 JWT_SECRET=your_random_64_character_hex_string
 PORT=5000
 NODE_ENV=development
